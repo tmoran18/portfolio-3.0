@@ -6,7 +6,7 @@ const SVGBackground = () => {
       position='absolute'
       className={styles.bg}
       w='100vw'
-      height='100vh'
+      height='calc(100vh - 50px)'
     ></Box>
   )
 }
