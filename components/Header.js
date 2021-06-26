@@ -36,19 +36,14 @@ const Header = () => {
         align={{ base: 'center' }}
         justify={{ sm: 'space-between' }}
       >
-        <Button
-          link='#work'
-          bg='blue'
-          color='white'
-          shadowColor='rgba(0, 112, 243, 0.5)'
-        >
+        <Button link='#work' bg='blue' color='white' shadowColor='blue'>
           See My Work
         </Button>
         <Button
           link='#services'
           bg='white'
           color='grey.600'
-          shadowColor='rgba(0, 0, 0, 0.25)'
+          shadowColor='black'
         >
           Services
         </Button>
