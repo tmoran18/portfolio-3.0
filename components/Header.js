@@ -25,7 +25,7 @@ const Header = () => {
       >
         Front End Developer
       </Heading>
-      <Text color='gray.700' maxW='620px' py={12} pb={{ base: '2', md: '10' }}>
+      <Text color='gray.700' maxW='620px' py={12} pb={{ base: '6', md: '10' }}>
         Hi, I’m Tim. I am a Front End Developer living in Brisbane, Australia. I
         work with HTML, CSS, JavaScript and React. I enjoy problem solving and
         UI/UX design.
@@ -34,7 +34,8 @@ const Header = () => {
         w={{ base: '18rem', sm: '28rem' }}
         flexDirection={{ base: 'column', sm: 'row' }}
         align={{ base: 'center' }}
-        justify={{ sm: 'space-between' }}
+        justify={{ base: 'space-between', sm: 'space-between' }}
+        h='7rem'
       >
         <Button link='#work' bg='blue' color='white' shadowColor='blue'>
           See My Work

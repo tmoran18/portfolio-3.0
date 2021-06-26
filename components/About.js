@@ -143,7 +143,7 @@ const About = () => {
             </AccordionPanel>
           </AccordionItem>
         </Accordion>
-        <Heading as='h5' size='md' mb={6}>
+        <Heading as='h5' size='md' mb={10}>
           Want to know more or work together?
         </Heading>
         <Button link='#contact' color='white' bg='blue' shadowColor='blue'>

@@ -16,7 +16,6 @@ const Button = ({ bg, color, link, children, shadowColor }) => {
       <ChakraButton
         minW='13rem'
         minH='2.8rem'
-        mt={6}
         textAlign='center'
         bg={bg}
         color={color}
