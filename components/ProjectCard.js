@@ -33,7 +33,7 @@ const ProjectCard = ({ imgSrc, imgAlt, title, blurb, project }) => {
       overflow='hidden'
       maxW={80}
       cursor='pointer'
-      _hover={{ boxShadow: '2xl' }}
+      _hover={{ boxShadow: '2xl', transform: 'scale(1.007)' }}
     >
       <Box onClick={onOpen}>
         <Box borderBottom='1px solid' borderColor='gray.200' maxH='181px'>
