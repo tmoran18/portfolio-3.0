@@ -15,7 +15,7 @@ import {
 
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import LogoWhite from './Icons/LogoWhite'
-import GitHubLogoWhite from './Icons/GitHubLogoWhite'
+import GitHubLogoWhite from './Icons/GithubLogoWhite'
 import TwitterLogoWhite from './Icons/TwitterLogoWhite'
 
 const Navbar = () => {
