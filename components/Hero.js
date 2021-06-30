@@ -1,5 +1,4 @@
-import { Flex } from '@chakra-ui/layout'
-import Image from 'next/image'
+import { Flex, Image } from '@chakra-ui/react'
 
 const Hero = () => {
   return (
@@ -7,7 +6,7 @@ const Hero = () => {
       <Image
         src={'/smiley.webp'}
         width={1920}
-        height={550}
+        height='auto'
         alt='A brush strok smiling face'
       />
     </Flex>

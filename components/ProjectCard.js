@@ -1,10 +1,9 @@
-import Image from 'next/image'
 import {
   Flex,
   Heading,
   Text,
   Box,
-  Button,
+  Image,
   Link,
   Modal,
   ModalOverlay,
@@ -105,7 +104,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               <Image
                 key={slide}
                 src={slide}
-                height={858}
+                height='auto'
                 width={858}
                 alt={slide}
               />
