@@ -91,7 +91,6 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       onClose={onClose}
       size={variant}
       scrollBehavior={modalScrollBehavior}
-      isCentered
     >
       <ModalOverlay />
       <ModalContent>

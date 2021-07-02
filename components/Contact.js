@@ -21,8 +21,9 @@ const Contact = () => {
       [e.target.name]: e.target.value,
     }))
 
-  const formSuccess = () => {
-    alert('hrrrmm did this work')
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    alert(JSON.stringify(inputs.nameInput))
   }
 
   return (
@@ -53,9 +54,7 @@ const Contact = () => {
           spacing={5}
           margin='auto'
           name='contact'
-          action='/success'
-          method='POST'
-          data-netlify='true'
+          onSubmit={(e) => handleSubmit(e)}
         >
           <Box fontSize='xs' textAlign='right' alignSelf='flex-end' pr={3}>
             <Text fontSize='md' as='span' color='red.400'>
