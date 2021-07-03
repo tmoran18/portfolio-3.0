@@ -28,6 +28,7 @@ const Contact = () => {
 
   return (
     <Box
+      id='contact'
       maxW={{ base: '600px', lg: '1000px' }}
       margin='4rem auto'
       border={{ base: 'none', md: '1px solid #eee' }}

@@ -3,6 +3,7 @@ import ProjectCard from './ProjectCard'
 const Work = () => {
   return (
     <Flex
+      id='work'
       direction='column'
       align='center'
       py={{ base: '3rem', md: '6rem', lg: '8rem' }}

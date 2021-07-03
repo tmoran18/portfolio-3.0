@@ -3,12 +3,7 @@ import {
   Flex,
   HStack,
   Link,
-  Text,
   IconButton,
-  Button,
-  Stack,
-  Collapse,
-  useBreakpointValue,
   useMediaQuery,
   useDisclosure,
 } from '@chakra-ui/react'
@@ -17,16 +12,17 @@ import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import LogoWhite from './Icons/LogoWhite'
 import GitHubLogoWhite from './Icons/GithubLogoWhite'
 import TwitterLogoWhite from './Icons/TwitterLogoWhite'
+import MobileMenu from './MobileMenu'
 
 const Navbar = () => {
-  const [isMobile] = useMediaQuery('(max-width: 600px)')
+  const [isMobile] = useMediaQuery('(max-width: 684px)')
 
   return <Box>{isMobile ? <MobileNav /> : <DesktopNav />}</Box>
 }
 
 const DesktopNav = () => {
   return (
-    <Box color='white' bg='#171717' h={16}>
+    <Box color='white' bg='#171717' h={16} p={5}>
       <Flex
         maxW='1000px'
         m='auto'
@@ -59,31 +55,29 @@ const DesktopNav = () => {
 }
 
 const MobileNav = () => {
-  const { isOpen, onToggle } = useDisclosure()
+  const { isOpen, onOpen, onClose, onToggle } = useDisclosure()
   return (
-    <Flex
-      color='white'
-      bg='#171717'
-      justify='space-between'
-      align='center'
-      px={8}
-      h={16}
-    >
-      <LogoWhite></LogoWhite>
-      <IconButton
+    <Box>
+      <Flex
+        color='white'
         bg='#171717'
-        variant='unstyled'
-        _focus={{ outline: 'none' }}
-        onClick={onToggle}
-        icon={
-          isOpen ? (
-            <CloseIcon color='white' w={6} h={6} />
-          ) : (
-            <HamburgerIcon color='white' w={8} h={8} />
-          )
-        }
-      ></IconButton>
-    </Flex>
+        justify='space-between'
+        align='center'
+        px={8}
+        h={16}
+      >
+        <LogoWhite></LogoWhite>
+
+        <IconButton
+          bg='#171717'
+          variant='unstyled'
+          _focus={{ outline: 'none' }}
+          onClick={onToggle}
+          icon={<HamburgerIcon color='white' w={8} h={8} />}
+        ></IconButton>
+      </Flex>
+      <MobileMenu isOpen={isOpen} onClose={onClose} />
+    </Box>
   )
 }
 

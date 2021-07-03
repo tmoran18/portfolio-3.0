@@ -8,11 +8,16 @@ import Banner from '../components/Banner'
 import Services from '../components/Services'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import dynamic from 'next/dynamic'
+
+const DynamicNavbar = dynamic(() => import('../components/Navbar'), {
+  ssr: false,
+})
 
 export default function Home() {
   return (
     <>
-      <Navbar></Navbar>
+      <DynamicNavbar />
       <Hero />
       <Header />
       <About />

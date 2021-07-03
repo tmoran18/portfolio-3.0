@@ -14,6 +14,7 @@ import Button from './Button'
 const About = () => {
   return (
     <Box
+      id='about'
       bg='gray.50'
       borderTop='1px solid'
       borderBottom='1px solid'
