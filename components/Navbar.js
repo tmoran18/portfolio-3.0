@@ -35,8 +35,7 @@ const DesktopNav = () => {
           <HStack align='center' spacing={8} justify='center'>
             {NavLinks.map((navLink) => (
               <Box key={navLink.label}>
-                <Link>{navLink.label}</Link>
-                {navLink.children}
+                <Link href={navLink.href}>{navLink.label}</Link>
               </Box>
             ))}
           </HStack>

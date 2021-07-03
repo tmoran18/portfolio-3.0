@@ -38,6 +38,9 @@ const MobileMenu = ({ isOpen, onClose }) => {
             <Link onClick={onClose} href='#work'>
               Work
             </Link>
+            <Link onClick={onClose} href='#services'>
+              Services
+            </Link>
             <Link onClick={onClose} href='#contact'>
               Contact
             </Link>

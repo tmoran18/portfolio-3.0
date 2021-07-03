@@ -1,4 +1,4 @@
-import { Box, Flex, Heading } from '@chakra-ui/react'
+import { Flex, Heading } from '@chakra-ui/layout'
 import ProjectCard from './ProjectCard'
 const Work = () => {
   return (
@@ -9,7 +9,7 @@ const Work = () => {
       py={{ base: '3rem', md: '6rem', lg: '8rem' }}
       px={{ base: '2rem' }}
     >
-      <Heading as='h4' size='xl' fontWeight={700}>
+      <Heading as='h4' size='xl' fontWeight={700} mb={10}>
         Work
       </Heading>
       <Flex maxW='1000px'>
