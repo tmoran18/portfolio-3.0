@@ -97,7 +97,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         <ModalHeader>{project.title}</ModalHeader>
         <ModalCloseButton />
 
-        <Carousel infiniteLoop>
+        <Carousel infiniteLoop showThumbs={false}>
           {project.imageSlide.map((slide) => {
             return (
               <Image
