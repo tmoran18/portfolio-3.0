@@ -14,17 +14,6 @@ import {
 } from '@chakra-ui/react'
 
 const Contact = () => {
-  const [inputs, setInputs] = useState({})
-  const handleChange = (e) =>
-    setInputs((prevState) => ({
-      ...prevState,
-      [e.target.name]: e.target.value,
-    }))
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-  }
-
   return (
     <Box
       id='contact'
@@ -56,7 +45,6 @@ const Contact = () => {
           name='contact'
           method='POST'
           data-netlify='true'
-          action='/success'
         >
           <Box fontSize='xs' textAlign='right' alignSelf='flex-end' pr={3}>
             <Text fontSize='md' as='span' color='red.400'>
@@ -67,47 +55,25 @@ const Contact = () => {
           <input type='hidden' name='contact-form' value='contact' />
           <FormControl id='first-name' isRequired>
             <FormLabel>First name</FormLabel>
-            <Input
-              name='nameInput'
-              value={inputs.nameInput || ''}
-              onChange={handleChange}
-              size='md'
-            />
+            <Input name='name' id='name' size='md' />
           </FormControl>
           <FormControl id='email' isRequired>
             <FormLabel>Email</FormLabel>
-            <Input
-              name='emailInput'
-              value={inputs.emailInput || ''}
-              onChange={handleChange}
-              size='md'
-              type='email'
-            />
+            <Input name='email' id='email' size='md' type='email' />
           </FormControl>
           <FormControl id='phone'>
             <FormLabel>Phone</FormLabel>
-            <Input
-              name='phoneInput'
-              value={inputs.phoneInput || ''}
-              onChange={handleChange}
-              size='md'
-            />
+            <Input name='phone' id='phone' size='md' />
           </FormControl>
           <FormControl id='organisation'>
             <FormLabel>Organisation</FormLabel>
-            <Input
-              name='orgInput'
-              value={inputs.orgInput || ''}
-              onChange={handleChange}
-              size='md'
-            />
+            <Input name='organisation' id='organisation' size='md' />
           </FormControl>
           <FormControl id='message' isRequired>
             <FormLabel>Message</FormLabel>
             <Textarea
-              name='messageInput'
-              value={inputs.messageInput || ''}
-              onChange={handleChange}
+              name='message'
+              id='message'
               placeholder='Your message here...'
               mb={8}
             />
