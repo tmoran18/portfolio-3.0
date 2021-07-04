@@ -23,7 +23,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    alert(JSON.stringify(inputs.nameInput))
   }
 
   return (
