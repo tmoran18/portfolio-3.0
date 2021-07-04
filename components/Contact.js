@@ -45,6 +45,7 @@ const Contact = () => {
           name='contact-form'
           method='POST'
           data-netlify='true'
+          action='/success'
         >
           <Box fontSize='xs' textAlign='right' alignSelf='flex-end' pr={3}>
             <Text fontSize='md' as='span' color='red.400'>
