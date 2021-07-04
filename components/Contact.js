@@ -57,7 +57,6 @@ const Contact = () => {
           method='POST'
           data-netlify='true'
           action='/success'
-          onSubmit={(e) => handleSubmit(e)}
         >
           <Box fontSize='xs' textAlign='right' alignSelf='flex-end' pr={3}>
             <Text fontSize='md' as='span' color='red.400'>
