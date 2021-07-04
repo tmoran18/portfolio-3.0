@@ -54,6 +54,9 @@ const Contact = () => {
           spacing={5}
           margin='auto'
           name='contact'
+          method='POST'
+          data-netlify='true'
+          action='/success'
           onSubmit={(e) => handleSubmit(e)}
         >
           <Box fontSize='xs' textAlign='right' alignSelf='flex-end' pr={3}>
