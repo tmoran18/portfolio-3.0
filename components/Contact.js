@@ -42,7 +42,7 @@ const Contact = () => {
           p={{ base: 3, sm: 5, lg: 8 }}
           spacing={5}
           margin='auto'
-          name='contact'
+          name='contact-form'
           method='POST'
           data-netlify='true'
         >
@@ -52,7 +52,7 @@ const Contact = () => {
             </Text>
             <Text as='span'>Indicates Required Field</Text>
           </Box>
-          <input type='hidden' name='contact-form' value='contact' />
+          <input type='hidden' name='form-name' value='contact-form' />
           <FormControl id='first-name' isRequired>
             <FormLabel>First name</FormLabel>
             <Input name='name' id='name' size='md' />
