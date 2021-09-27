@@ -9,6 +9,8 @@ import Services from '../components/Services'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import dynamic from 'next/dynamic'
+import Skills from '../components/Skills'
+import { Box, Button } from '@chakra-ui/react'
 
 const DynamicNavbar = dynamic(() => import('../components/Navbar'), {
   ssr: false,
@@ -20,9 +22,13 @@ export default function Home() {
       <DynamicNavbar />
       <Hero />
       <Header />
+
+      <Skills />
+
       <About />
       <Work />
       <Banner />
+
       <Services />
       <Contact />
       <Footer />

@@ -53,6 +53,11 @@ const Contact = () => {
             </Text>
             <Text as='span'>Indicates Required Field</Text>
           </Box>
+          <Text visibility='hidden' position='absolute'>
+            <label>
+              Don’t fill this out if you’re human: <input name='bot-field' />
+            </label>
+          </Text>
           <input type='hidden' name='form-name' value='contact-form' />
           <FormControl id='first-name' isRequired>
             <FormLabel>First name</FormLabel>
