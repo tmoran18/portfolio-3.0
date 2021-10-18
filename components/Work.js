@@ -1,5 +1,6 @@
-import { Flex, Heading } from '@chakra-ui/layout'
-import ProjectCard from './ProjectCard'
+import { Flex, Heading, Grid, Box, Text } from '@chakra-ui/layout'
+import Image from 'next/image'
+import Link from 'next/link'
 const Work = () => {
   return (
     <Flex
@@ -12,15 +13,63 @@ const Work = () => {
       <Heading as='h4' size='xl' fontWeight={700} mb={10}>
         Work
       </Heading>
-      <Flex maxW='1000px'>
-        <ProjectCard
-          imgSrc={projects[0].imgSrc}
-          imgAlt={projects[0].imgAlt}
-          title={projects[0].title}
-          blurb={projects[0].blurb}
-          project={projects[0]}
-        />
-      </Flex>
+      <Grid
+        maxW='1000px'
+        templateColumns={{ base: 'repeat(1, 1fr)', lg: 'repeat(2, 1fr)' }}
+        gap={10}
+      >
+        <Link href='/work/meal-planner'>
+          <a>
+            <Image
+              src={'/meal-planner-card.jpg'}
+              width={540}
+              height={300}
+              alt='Meal Planner Card'
+            />
+            <Heading as='h2' size='lg' mt={4}>
+              Meal Planner
+            </Heading>
+            <Text mt={4}>
+              A meal planning app built using NextJS, ChakraUI and Supbase for
+              the backend.
+            </Text>
+          </a>
+        </Link>
+        <Link href='/work/dresstoimpress'>
+          <a>
+            <Image
+              src={'/dresstoimpress-card.jpg'}
+              width={540}
+              height={300}
+              alt='Dress to impress Card'
+            />
+            <Heading as='h2' size='lg' mt={4}>
+              Dress to Impress
+            </Heading>
+            <Text mt={4}>
+              A custom WordPress client site for hiring formal Dresses built
+              using Divi.
+            </Text>
+          </a>
+        </Link>
+        <Link href='/work/assignment-planner'>
+          <a>
+            <Image
+              src={'/assignment-planner-card.jpg'}
+              width={540}
+              height={300}
+              alt='Assignment Planner Card'
+            />
+            <Heading as='h2' size='lg' mt={4}>
+              Assignment Planner
+            </Heading>
+            <Text mt={4}>
+              A React application for planning University assignments using
+              NextJS
+            </Text>
+          </a>
+        </Link>
+      </Grid>
     </Flex>
   )
 }

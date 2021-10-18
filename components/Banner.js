@@ -15,7 +15,7 @@ const Banner = () => {
         <Heading as='h3' size='xl' color='white'>
           Lets build your project!
         </Heading>
-        <Button link='#contact' color='white' bg='black'>
+        <Button link='/#contact' color='white' bg='black'>
           Get in Touch
         </Button>
       </Flex>

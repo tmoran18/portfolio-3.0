@@ -1,5 +1,4 @@
 import styles from '../styles/Home.module.css'
-import Navbar from '../components/Navbar'
 import Head from 'next/head'
 import Hero from '../components/Hero'
 import Header from '../components/Header'

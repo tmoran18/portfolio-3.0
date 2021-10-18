@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import {
   Box,
   Flex,
@@ -6,6 +7,7 @@ import {
   IconButton,
   useMediaQuery,
   useDisclosure,
+  Button,
 } from '@chakra-ui/react'
 
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
@@ -83,23 +85,23 @@ const MobileNav = () => {
 const NavLinks = [
   {
     label: 'Home',
-    href: '#home',
+    href: '/',
   },
   {
     label: 'About',
-    href: '#about',
+    href: '/#about',
   },
   {
     label: 'Work',
-    href: '#work',
+    href: '/#work',
   },
   {
     label: 'Services',
-    href: '#services',
+    href: '/#services',
   },
   {
     label: 'Contact',
-    href: '#contact',
+    href: '/#contact',
   },
 ]
 
