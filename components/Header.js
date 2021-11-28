@@ -28,8 +28,8 @@ const Header = () => {
                 py={12}
                 pb={{ base: '6', md: '10' }}>
                 Hi, I’m Tim. I am a Front End Developer living in Brisbane,
-                Australia. I work with HTML, CSS, JavaScript, React & the Next
-                JS. I enjoy problem solving and UI/UX design.
+                Australia. I work with HTML, CSS, JavaScript, React & Next JS. I
+                enjoy problem solving and UI/UX design.
             </Text>
             <Flex
                 w={{ base: '18rem', sm: '28rem' }}
